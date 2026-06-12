@@ -1,8 +1,8 @@
 Package: RcppOTIO
-Version: 0.0.0.8
+Version: 0.1.0
 Imports: Rcpp (>= 1.0.0)
 LinkingTo: Rcpp
 Suggests: tinytest, simplermarkdown
-License: MIT + file LICENSE
-MD5sum: 9bb1fe4e12fa62db0301c4553fbdf04f
+License: Apache License (== 2.0)
+MD5sum: 695f2a1868b9dac0121dce7e925ba478
 NeedsCompilation: yes
