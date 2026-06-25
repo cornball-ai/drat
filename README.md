@@ -1,12 +1,12 @@
 # drat
 
 CRAN-style package repository for [cornball.ai](https://cornball.ai) R packages
-that aren't on CRAN (currently `RcppOTIO`).
+that aren't on CRAN (currently `hacer` and `RcppOTIO`).
 
 ## Usage
 
 ```r
-install.packages("RcppOTIO",
+install.packages(c("hacer", "RcppOTIO"),
                  repos = c("https://cornball-ai.github.io/drat",
                            getOption("repos")))
 ```
