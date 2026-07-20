@@ -1,3 +1,10 @@
+Package: bonsaisitter
+Version: 0.1.0
+Suggests: tinytest, treesitter, treesitter.r
+License: MIT + file LICENSE
+MD5sum: e981a23281ead6ec47b4d46ad331547e
+NeedsCompilation: yes
+
 Package: hacer
 Version: 0.2.2.1
 Depends: R (>= 3.6)
@@ -7,6 +14,14 @@ License: Apache License (>= 2)
 MD5sum: 12afb2b1ad301b01559cf4434a40c952
 NeedsCompilation: no
 
+Package: mirar
+Version: 0.1.0
+Imports: utils
+Suggests: tinytest
+License: Apache License (>= 2)
+MD5sum: 0a8218728e3cb1efd49030cfd7e879e9
+NeedsCompilation: no
+
 Package: RcppOTIO
 Version: 0.1.0
 Imports: Rcpp (>= 1.0.0)
@@ -14,4 +29,36 @@ LinkingTo: Rcpp
 Suggests: tinytest, simplermarkdown
 License: Apache License (== 2.0)
 MD5sum: 695f2a1868b9dac0121dce7e925ba478
+NeedsCompilation: yes
+
+Package: treesitter.cpp
+Version: 0.0.1
+Depends: R (>= 4.3.0)
+Suggests: tinytest, treesitter
+License: MIT + file LICENSE
+MD5sum: 4438fa4b648e87162140d8d4c7de42f4
+NeedsCompilation: yes
+
+Package: treesitter.javascript
+Version: 0.0.1
+Depends: R (>= 4.3.0)
+Suggests: tinytest, treesitter
+License: MIT + file LICENSE
+MD5sum: cdcc5b87572d2466128b711b1df91b1f
+NeedsCompilation: yes
+
+Package: treesitter.python
+Version: 0.0.1
+Depends: R (>= 4.3.0)
+Suggests: tinytest, treesitter
+License: MIT + file LICENSE
+MD5sum: d02a4aa0d605987a9823e4df5eabd9bc
+NeedsCompilation: yes
+
+Package: treesitter.rust
+Version: 0.0.1
+Depends: R (>= 4.3.0)
+Suggests: tinytest, treesitter
+License: MIT + file LICENSE
+MD5sum: 7857aa299f670554cafe8b7b4ea1865a
 NeedsCompilation: yes
