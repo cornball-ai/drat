@@ -1,12 +1,18 @@
 # drat
 
 CRAN-style package repository for [cornball.ai](https://cornball.ai) R packages
-that aren't on CRAN (currently `hacer` and `RcppOTIO`).
+that aren't on CRAN (yet):
+
+- `bonsaisitter` — tree-sitter runtime for R, zero hard dependencies
+- `treesitter.python`, `treesitter.cpp`, `treesitter.rust`,
+  `treesitter.javascript` — grammar packages for the runtime
+- `mirar` — structured runtime inspection of R sessions
+- `hacer`, `RcppOTIO`
 
 ## Usage
 
 ```r
-install.packages(c("hacer", "RcppOTIO"),
+install.packages("bonsaisitter",
                  repos = c("https://cornball-ai.github.io/drat",
                            getOption("repos")))
 ```
