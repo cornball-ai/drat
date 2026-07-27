@@ -5,7 +5,7 @@ that aren't on CRAN (yet):
 
 - `bonsaisitter` — tree-sitter runtime for R, zero hard dependencies
 - `treesitter.python`, `treesitter.cpp`, `treesitter.rust`,
-  `treesitter.javascript` — grammar packages for the runtime
+  `treesitter.javascript`, `treesitter.go` — grammar packages for the runtime
 - `mirar` — structured runtime inspection of R sessions
 - `hacer`, `RcppOTIO`
 

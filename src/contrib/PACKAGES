@@ -39,6 +39,14 @@ License: MIT + file LICENSE
 MD5sum: 4438fa4b648e87162140d8d4c7de42f4
 NeedsCompilation: yes
 
+Package: treesitter.go
+Version: 0.0.1
+Depends: R (>= 4.3.0)
+Suggests: tinytest, treesitter
+License: MIT + file LICENSE
+MD5sum: 22b2a043b6c88a5b9dd5c9b6ed55f0e6
+NeedsCompilation: yes
+
 Package: treesitter.javascript
 Version: 0.0.1
 Depends: R (>= 4.3.0)
