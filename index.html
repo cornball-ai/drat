@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>cornball.ai drat repository</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 46rem; margin: 3rem auto;
+         padding: 0 1rem; line-height: 1.5; }
+  code, pre { font-family: ui-monospace, monospace; }
+  pre { background: #f5f5f5; padding: 1rem; overflow-x: auto; }
+  li { margin: .25rem 0; }
+</style>
+</head>
+<body>
+<h1>cornball.ai drat repository</h1>
+
+<p>A CRAN-style repository for
+<a href="https://cornball.ai">cornball.ai</a> R packages that are not on
+CRAN (yet). Source packages only.</p>
+
+<pre><code>install.packages("bonsaisitter",
+                 repos = c("https://cornball-ai.github.io/drat",
+                           getOption("repos")))</code></pre>
+
+<h2>Packages</h2>
+<ul>
+  <li><code>bonsaisitter</code> — tree-sitter runtime for R, zero hard dependencies</li>
+  <li><code>treesitter.python</code>, <code>treesitter.cpp</code>,
+      <code>treesitter.rust</code>, <code>treesitter.javascript</code>,
+      <code>treesitter.go</code> — grammar packages for the runtime</li>
+  <li><code>mirar</code> — structured runtime inspection of R sessions</li>
+  <li><code>chat.api</code> — transport-agnostic chat contract for R agents,
+      with adapters for Matrix, Slack, and IRC</li>
+  <li><code>hacer</code>, <code>RcppOTIO</code></li>
+</ul>
+
+<p><code>RcppOTIO</code> needs the OpenTimelineIO C++ library (&gt;= 0.18),
+Imath headers, and a C++17 compiler — see its <code>SystemRequirements</code>.</p>
+
+<p><a href="src/contrib/PACKAGES">Package index</a> ·
+   <a href="https://github.com/cornball-ai/drat">Source on GitHub</a></p>
+</body>
+</html>
