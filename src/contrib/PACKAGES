@@ -30,6 +30,15 @@ License: Apache License (>= 2)
 MD5sum: 0a8218728e3cb1efd49030cfd7e879e9
 NeedsCompilation: no
 
+Package: mx.client
+Version: 0.2.0.2
+Depends: R (>= 4.0)
+Imports: jsonlite, mx.api (>= 0.3.0), stats, tools, utils
+Suggests: mx.crypto (>= 0.2.0), simplermarkdown, tinytest
+License: Apache License (>= 2)
+MD5sum: 011f8bf053c23e07fb3e14a2436fa107
+NeedsCompilation: no
+
 Package: RcppOTIO
 Version: 0.1.0
 Imports: Rcpp (>= 1.0.0)

@@ -34,6 +34,13 @@ CRAN (yet). Source packages only.</p>
       with adapters for Matrix, Slack, and IRC</li>
   <li><code>hacer</code>, <code>RcppOTIO</code></li>
 </ul>
+<p>It also carries development versions of packages that <em>are</em> on
+CRAN, when something here needs a fix that has not been released yet:</p>
+<ul>
+  <li><code>mx.client</code> 0.2.0.2 &mdash; CRAN has 0.2.0.
+      <code>chat.api</code> and <code>corteza</code> both require 0.2.0.2
+      or newer. Drops back to the CRAN copy once 0.2.1 is published.</li>
+</ul>
 
 <p><code>RcppOTIO</code> needs the OpenTimelineIO C++ library (&gt;= 0.18),
 Imath headers, and a C++17 compiler — see its <code>SystemRequirements</code>.</p>

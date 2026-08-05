@@ -11,6 +11,14 @@ that aren't on CRAN (yet):
   adapters for Matrix, Slack, and IRC
 - `hacer`, `RcppOTIO`
 
+It also carries development versions of packages that *are* on CRAN, when
+something here needs a fix that has not been released yet:
+
+- `mx.client` 0.2.0.2 — CRAN has 0.2.0. `chat.api` and `corteza` both
+  require 0.2.0.2 or newer, which fixes three ways an encrypted send could
+  report success for a message nobody can read. Drops back to the CRAN copy
+  once 0.2.1 is published.
+
 ## Usage
 
 ```r
@@ -18,6 +26,11 @@ install.packages("bonsaisitter",
                  repos = c("https://cornball-ai.github.io/drat",
                            getOption("repos")))
 ```
+
+Listing this repo first is what makes the development versions win: R picks
+the highest version it can see across the repositories given, so a package
+here at 0.2.0.2 supersedes CRAN's 0.2.0 and one that only exists here is
+found at all.
 
 Source packages only. `RcppOTIO` needs the OpenTimelineIO C++ library (>= 0.18),
 Imath headers, and a C++17 compiler -- see its `SystemRequirements`.
