@@ -5,6 +5,14 @@ License: MIT + file LICENSE
 MD5sum: e981a23281ead6ec47b4d46ad331547e
 NeedsCompilation: yes
 
+Package: chat.api
+Version: 0.0.1.2
+Depends: R (>= 4.0)
+Suggests: mx.api, mx.client (>= 0.1.1.2), mx.crypto, slackr, tinytest
+License: Apache License (>= 2)
+MD5sum: b81c20e1063eff3dc12d1363072d3bde
+NeedsCompilation: no
+
 Package: hacer
 Version: 0.2.2.1
 Depends: R (>= 3.6)

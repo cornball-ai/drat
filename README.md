@@ -7,6 +7,8 @@ that aren't on CRAN (yet):
 - `treesitter.python`, `treesitter.cpp`, `treesitter.rust`,
   `treesitter.javascript`, `treesitter.go` — grammar packages for the runtime
 - `mirar` — structured runtime inspection of R sessions
+- `chat.api` — transport-agnostic chat contract for R agents, with
+  adapters for Matrix, Slack, and IRC
 - `hacer`, `RcppOTIO`
 
 ## Usage
