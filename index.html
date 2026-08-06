@@ -38,8 +38,11 @@ CRAN (yet). Source packages only.</p>
 CRAN, when something here needs a fix that has not been released yet:</p>
 <ul>
   <li><code>mx.client</code> 0.2.0.3 &mdash; CRAN has 0.2.0.
-      <code>chat.api</code> and <code>corteza</code> both require 0.2.0.2
-      or newer. Drops back to the CRAN copy once 0.2.1 is published.</li>
+      <code>corteza</code> requires 0.2.0.2, which fixes three ways an
+      encrypted send could report success for a message nobody can read;
+      <code>chat.api</code> requires 0.2.0.3, which adds the reaction
+      extractor its <code>chat_poll()</code> reads. Drops back to the
+      CRAN copy once those ship as 0.2.1.</li>
 </ul>
 
 <p><code>RcppOTIO</code> needs the OpenTimelineIO C++ library (&gt;= 0.18),
