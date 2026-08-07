@@ -14,11 +14,14 @@ that aren't on CRAN (yet):
 It also carries development versions of packages that *are* on CRAN, when
 something here needs a fix that has not been released yet:
 
-- `mx.client` 0.2.0.4 — CRAN has 0.2.0. `corteza` requires 0.2.0.2, which
-  fixes three ways an encrypted send could report success for a message
-  nobody can read; `chat.api` requires 0.2.0.3, which adds the reaction
-  extractor its `chat_poll()` reads. Drops back to the CRAN copy once
-  those ship as 0.2.1.
+- `mx.client` — CRAN has 0.2.0, which predates the encrypted-send fixes
+  and the reaction and invite extractors that `chat.api` reads. Both
+  `chat.api` and `corteza` declare floors above it, so the version here
+  is whatever they currently need. Drops back to the CRAN copy once
+  those changes ship as 0.2.1.
+
+The exact versions live in `src/contrib/PACKAGES` rather than in this
+list, which only says why a package is here.
 
 ## Usage
 
