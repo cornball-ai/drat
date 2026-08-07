@@ -14,7 +14,7 @@ that aren't on CRAN (yet):
 It also carries development versions of packages that *are* on CRAN, when
 something here needs a fix that has not been released yet:
 
-- `mx.client` 0.2.0.3 — CRAN has 0.2.0. `corteza` requires 0.2.0.2, which
+- `mx.client` 0.2.0.4 — CRAN has 0.2.0. `corteza` requires 0.2.0.2, which
   fixes three ways an encrypted send could report success for a message
   nobody can read; `chat.api` requires 0.2.0.3, which adds the reaction
   extractor its `chat_poll()` reads. Drops back to the CRAN copy once
