@@ -6,12 +6,12 @@ MD5sum: e981a23281ead6ec47b4d46ad331547e
 NeedsCompilation: yes
 
 Package: chat.api
-Version: 0.0.1.14
+Version: 0.0.1.17
 Depends: R (>= 4.0)
 Suggests: httr, mx.api, mx.client (>= 0.2.0.4), mx.crypto, slackr,
         tinytest
 License: Apache License (>= 2)
-MD5sum: 132a7540758733f692aec3b0b3bc2557
+MD5sum: 4c421db68e106a4e699f8b2dd1dd73eb
 NeedsCompilation: no
 
 Package: hacer
