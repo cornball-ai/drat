@@ -24,11 +24,11 @@ MD5sum: 12afb2b1ad301b01559cf4434a40c952
 NeedsCompilation: no
 
 Package: janssonr
-Version: 0.0.1.2
+Version: 0.0.1.3
 Depends: R (>= 4.4.0)
 Suggests: tinytest
 License: MIT + file LICENSE
-MD5sum: 0890ba44236434228b5a5506c63e38ba
+MD5sum: fcb074c20a56524a214474e7e92882f9
 NeedsCompilation: yes
 
 Package: mirar
