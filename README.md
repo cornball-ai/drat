@@ -9,6 +9,8 @@ that aren't on CRAN (yet):
 - `mirar` — structured runtime inspection of R sessions
 - `chat.api` — transport-agnostic chat contract for R agents, with
   adapters for Matrix, Slack, and IRC
+- `janssonr` — strict JSON encode/decode via the system Jansson C
+  library (needs `libjansson-dev` >= 2.11 and R >= 4.4)
 - `hacer`, `RcppOTIO`
 
 It also carries development versions of packages that *are* on CRAN, when
