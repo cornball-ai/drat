@@ -23,6 +23,15 @@ License: Apache License (>= 2)
 MD5sum: 12afb2b1ad301b01559cf4434a40c952
 NeedsCompilation: no
 
+Package: janssonr
+Version: 0.0.1
+Depends: R (>= 4.4.0)
+Suggests: tinytest
+License: MIT + file LICENSE
+OS_type: unix
+MD5sum: 58c1417281d981be96a93cc7e6f8154e
+NeedsCompilation: yes
+
 Package: mirar
 Version: 0.1.0
 Imports: utils
