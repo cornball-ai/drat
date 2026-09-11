@@ -21,11 +21,11 @@ something here needs a fix that has not been released yet:
   and the reaction and invite extractors that `chat.api` reads. Both
   `chat.api` and `corteza` declare floors above it, so the version here
   is whatever they currently need. Drops back to the CRAN copy once
-  those changes ship as 0.2.1.
-- `mx.api` — development cross-signing upload endpoints required by
-  mx.client's bootstrap and room-key recovery support.
-- `mx.crypto` — development signing-key and forwarded Megolm primitives
-  required by mx.client and chat.api's encrypted Matrix adapters.
+  those changes ship on CRAN.
+- Older `mx.api` and `mx.crypto` development archives remain available for
+  existing consumers. CRAN now provides mx.api 0.3.1 and mx.crypto 0.2.2,
+  including the cross-signing and SAS primitives. Use CRAN alongside this
+  repository to obtain those released dependencies.
 
 The exact versions live in `src/contrib/PACKAGES` rather than in this
 list, which only says why a package is here.

@@ -48,12 +48,12 @@ MD5sum: 77385246fe5e1d05e70395a6cfa5cc49
 NeedsCompilation: no
 
 Package: mx.client
-Version: 0.2.0.8
+Version: 0.2.0.10
 Depends: R (>= 4.0)
 Imports: jsonlite, mx.api (>= 0.3.0.2), stats, tools, utils
 Suggests: mx.crypto (>= 0.2.1.1), simplermarkdown, tinytest
 License: Apache License (>= 2)
-MD5sum: ee6b0fad3c23e90b4c34d2df1ee45635
+MD5sum: 40cea5d5811b9aa007b71a3222ae86ba
 NeedsCompilation: no
 
 Package: mx.crypto
