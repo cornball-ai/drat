@@ -16,8 +16,8 @@
 <h1>cornball.ai drat repository</h1>
 
 <p>A CRAN-style repository for
-<a href="https://cornball.ai">cornball.ai</a> R packages that are not on
-CRAN (yet). Source packages only.</p>
+<a href="https://cornball.ai">cornball.ai</a> R packages, including packages
+not on CRAN and current versions of packages also on CRAN. Source packages only.</p>
 
 <pre><code>install.packages("bonsaisitter",
                  repos = c("https://cornball-ai.github.io/drat",
@@ -34,16 +34,16 @@ CRAN (yet). Source packages only.</p>
       with adapters for Matrix, Slack, and IRC</li>
   <li><code>hacer</code>, <code>RcppOTIO</code></li>
 </ul>
-<p>It also carries development versions of packages that <em>are</em> on
-CRAN, when something here needs a fix that has not been released yet:</p>
+<p>The Matrix packages are also carried here:</p>
 <ul>
-  <li><code>mx.client</code> &mdash; CRAN has 0.2.0, which predates the
-      encrypted-send fixes and the reaction and invite extractors that
-      <code>chat.api</code> reads. Both <code>chat.api</code> and
-      <code>corteza</code> declare floors above it, so the version here is
-      whatever they currently need. Drops back to the CRAN copy once those
-      changes ship as 0.2.1.</li>
+  <li><code>mx.api</code>: Matrix client-server API bindings</li>
+  <li><code>mx.crypto</code>: Matrix end-to-end encryption primitives</li>
+  <li><code>mx.client</code>: stateful Matrix client helpers</li>
 </ul>
+<p>Keep each carried package aligned with the <code>Version:</code> on its
+<code>main</code> branch. Releases remain here after CRAN publication.
+Older archives remain available; the index lists only the latest version
+of each package.</p>
 
 <p><code>RcppOTIO</code> needs the OpenTimelineIO C++ library (&gt;= 0.18),
 Imath headers, and a C++17 compiler — see its <code>SystemRequirements</code>.</p>

@@ -40,28 +40,28 @@ MD5sum: 0a8218728e3cb1efd49030cfd7e879e9
 NeedsCompilation: no
 
 Package: mx.api
-Version: 0.3.0.2
+Version: 0.3.1
 Imports: curl, jsonlite
 Suggests: tinytest
 License: MIT + file LICENSE
-MD5sum: 77385246fe5e1d05e70395a6cfa5cc49
+MD5sum: 5faf79040ddac6c957d875448b760b18
 NeedsCompilation: no
 
 Package: mx.client
-Version: 0.2.0.10
+Version: 0.2.1
 Depends: R (>= 4.0)
 Imports: jsonlite, mx.api (>= 0.3.0.2), stats, tools, utils
-Suggests: mx.crypto (>= 0.2.1.1), simplermarkdown, tinytest
+Suggests: mx.crypto (>= 0.2.2), simplermarkdown, tinytest
 License: Apache License (>= 2)
-MD5sum: 40cea5d5811b9aa007b71a3222ae86ba
+MD5sum: aad250a31f0e1b760b1af25c6af6bc58
 NeedsCompilation: no
 
 Package: mx.crypto
-Version: 0.2.1.1
+Version: 0.2.2
 Depends: R (>= 4.3)
 Suggests: tinytest, mx.api (>= 0.2.0), simplermarkdown
 License: MIT + file LICENSE | Apache License 2.0
-MD5sum: ac1820bfcb1a7ae8fdf0216337fb64ac
+MD5sum: f906b10b24f7e16d67015c92d55c1267
 NeedsCompilation: yes
 
 Package: RcppOTIO

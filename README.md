@@ -1,7 +1,7 @@
 # drat
 
-CRAN-style package repository for [cornball.ai](https://cornball.ai) R packages
-that aren't on CRAN (yet):
+CRAN-style source repository for [cornball.ai](https://cornball.ai) R packages,
+including packages not on CRAN and current versions of packages also on CRAN:
 
 - `bonsaisitter` — tree-sitter runtime for R, zero hard dependencies
 - `treesitter.python`, `treesitter.cpp`, `treesitter.rust`,
@@ -14,18 +14,15 @@ that aren't on CRAN (yet):
   bundled copy otherwise; needs R >= 4.4)
 - `hacer`, `RcppOTIO`
 
-It also carries development versions of packages that *are* on CRAN, when
-something here needs a fix that has not been released yet:
+The Matrix packages are also carried here:
 
-- `mx.client` — CRAN has 0.2.0, which predates the encrypted-send fixes
-  and the reaction and invite extractors that `chat.api` reads. Both
-  `chat.api` and `corteza` declare floors above it, so the version here
-  is whatever they currently need. Drops back to the CRAN copy once
-  those changes ship on CRAN.
-- Older `mx.api` and `mx.crypto` development archives remain available for
-  existing consumers. CRAN now provides mx.api 0.3.1 and mx.crypto 0.2.2,
-  including the cross-signing and SAS primitives. Use CRAN alongside this
-  repository to obtain those released dependencies.
+- `mx.api`: Matrix client-server API bindings
+- `mx.crypto`: Matrix end-to-end encryption primitives
+- `mx.client`: stateful Matrix client helpers
+
+Keep each carried package aligned with the `Version:` on its `main` branch.
+Retain releases here after CRAN publication. Preserve older archives and
+index only the latest version of each package.
 
 The exact versions live in `src/contrib/PACKAGES` rather than in this
 list, which only says why a package is here.
@@ -38,10 +35,8 @@ install.packages("bonsaisitter",
                            getOption("repos")))
 ```
 
-Listing this repo first is what makes the development versions win: R picks
-the highest version it can see across the repositories given, so a package
-here at 0.2.0.2 supersedes CRAN's 0.2.0 and one that only exists here is
-found at all.
+For source packages, R selects the highest available version across the
+repositories. Repository order breaks ties when versions are equal.
 
 Source packages only. `RcppOTIO` needs the OpenTimelineIO C++ library (>= 0.18),
 Imath headers, and a C++17 compiler -- see its `SystemRequirements`.
@@ -50,7 +45,10 @@ Imath headers, and a C++17 compiler -- see its `SystemRequirements`.
 
 ```r
 file.copy("pkg_x.y.z.tar.gz", "~/drat/src/contrib/")
-tools::write_PACKAGES("~/drat/src/contrib", type = "source")
+tools::write_PACKAGES("~/drat/src/contrib", type = "source", latestOnly = TRUE)
 ```
 
-Then commit and push.
+Verify the archive matches the package's `main` version and tested source.
+Publish new archives first and verify their bytes on GitHub Pages. Then
+commit and publish the regenerated indexes, and verify the public index
+and archive checksums. Keep older tarballs in place.
