@@ -6,12 +6,12 @@ MD5sum: bebb39b47897f909b00600d83d4b8032
 NeedsCompilation: yes
 
 Package: chat.api
-Version: 0.0.1.28
+Version: 0.1.0.1
 Depends: R (>= 4.0)
-Suggests: httr, mx.api, mx.client (>= 0.2.0.8), mx.crypto (>= 0.2.1.1),
-        slackr, tinytest
+Suggests: httr, mx.api, mx.client (>= 0.2.1.1), mx.crypto (>= 0.2.2),
+        slackr, telegram, tinytest
 License: Apache License (>= 2)
-MD5sum: 199b09e8ec14ecc51989d298f569de8b
+MD5sum: 8cddcbb0c4132cea86b3c3e5d7505b90
 NeedsCompilation: no
 
 Package: hacer
@@ -48,20 +48,20 @@ MD5sum: c614b902dcc1a4e8c6983d4bcdaed51f
 NeedsCompilation: no
 
 Package: mx.client
-Version: 0.2.1.1
+Version: 0.2.1.3
 Depends: R (>= 4.0)
 Imports: jsonlite, mx.api (>= 0.3.1.1), stats, tools, utils
 Suggests: livekitr, mx.crypto (>= 0.2.2), simplermarkdown, tinytest
 License: Apache License (>= 2)
-MD5sum: cc992b9c5575856530e9eaf65a62ccf8
+MD5sum: c3ef7062b8598638ecee6ace5fe181a5
 NeedsCompilation: no
 
 Package: mx.crypto
-Version: 0.2.2
+Version: 0.2.2.1
 Depends: R (>= 4.3)
 Suggests: tinytest, mx.api (>= 0.2.0), simplermarkdown
 License: MIT + file LICENSE | Apache License 2.0
-MD5sum: f906b10b24f7e16d67015c92d55c1267
+MD5sum: 7ef1cf5b366f3f16482c150cf7ab9e29
 NeedsCompilation: yes
 
 Package: RcppOTIO
