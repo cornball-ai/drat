@@ -13,6 +13,8 @@ including packages not on CRAN and current versions of packages also on CRAN:
   (links system `libjansson-dev` >= 2.11 when present, compiles its
   bundled copy otherwise; needs R >= 4.4)
 - `hacer`, `RcppOTIO`
+- `corteza`, `llm.api`, `pensar`, `saber`: the agent toolchain, at the
+  `main` versions ahead of their CRAN releases
 
 The Matrix packages are also carried here:
 
