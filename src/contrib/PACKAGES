@@ -6,12 +6,12 @@ MD5sum: bebb39b47897f909b00600d83d4b8032
 NeedsCompilation: yes
 
 Package: chat.api
-Version: 0.1.0.2
+Version: 0.1.0.3
 Depends: R (>= 4.0)
 Suggests: httr, mx.api, mx.client (>= 0.2.1.1), mx.crypto (>= 0.2.2),
         slackr, telegram, tinytest
 License: Apache License (>= 2)
-MD5sum: 8f792135c17e4197b60364404a93b5ab
+MD5sum: d36d9215e9afeef85287391b47c9a436
 NeedsCompilation: no
 
 Package: corteza
