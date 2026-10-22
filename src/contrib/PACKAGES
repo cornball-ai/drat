@@ -15,7 +15,7 @@ MD5sum: d36d9215e9afeef85287391b47c9a436
 NeedsCompilation: no
 
 Package: corteza
-Version: 0.7.1.76
+Version: 0.7.1.77
 Depends: R (>= 4.4.0)
 Imports: callr, codetools, curl, digest, jsonlite, llm.api (>=
         0.1.9.13), printify, processx, saber (>= 0.7.2.3), utils
@@ -23,7 +23,7 @@ Suggests: chat.api (>= 0.1.0.1), clipr, fortunes, livekitr, rgrpc (>=
         0.1.0), mx.client (>= 0.2.1.1), pensar, RProtoBuf (>= 0.4.24),
         rstudioapi, simplermarkdown, tinytest
 License: Apache License (>= 2)
-MD5sum: 70e103eb8d70fb76a83e7ac266fa46f9
+MD5sum: f0ae7dbfac7625b23b5e76f2b8e3c42d
 NeedsCompilation: no
 
 Package: hacer
