@@ -112,11 +112,11 @@ MD5sum: c57b00ea373b20382d6300a577ce940a
 NeedsCompilation: yes
 
 Package: saber
-Version: 0.7.2.7
+Version: 0.8.0
 Depends: R (>= 4.4.0)
 Suggests: bonsaisitter, tinytest
 License: Apache License (>= 2)
-MD5sum: 2178bb8ebc6c9845849b3fc1507fd675
+MD5sum: 901b839f2e483e2b732acb493abedc40
 NeedsCompilation: no
 
 Package: treesitter.cpp
