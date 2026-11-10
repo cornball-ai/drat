@@ -21,6 +21,8 @@ The Matrix packages are also carried here:
 - `mx.api`: Matrix client-server API bindings
 - `mx.crypto`: Matrix end-to-end encryption primitives
 - `mx.client`: stateful Matrix client helpers
+- `livekitr`: LiveKit real-time audio client over the prebuilt
+  `livekit-ffi` library, installed separately with `lk_install_ffi()`
 
 Keep each carried package aligned with the `Version:` on its `main` branch.
 Retain releases here after CRAN publication. Preserve older archives and

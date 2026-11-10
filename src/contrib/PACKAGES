@@ -43,6 +43,15 @@ License: MIT + file LICENSE
 MD5sum: a877af964a7a38b18ae44f43ae3bd787
 NeedsCompilation: yes
 
+Package: livekitr
+Version: 0.0.1.2
+Depends: R (>= 4.5.0)
+Imports: RProtoBuf, tools, utils
+Suggests: tinytest
+License: Apache License (>= 2)
+MD5sum: 153571ebe2131c288d4c598659b280b8
+NeedsCompilation: yes
+
 Package: llm.api
 Version: 0.1.9.14
 Depends: R (>= 3.5.0)
